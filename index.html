@@ -5,178 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Cristea - Cabinet de Avocat</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background: url(fundal.jpg) no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-attachment: fixed;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-        }
-        header {
-            background: #2c3e50;
-            color: #1f3d5d;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 24px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
-        .section {
-            padding: 40px 0;
-            text-align: center;
-        }
-        .profile-image {
-            display: block;
-            width: 250px;
-            height: auto;
-            border-radius: 8px;
-            margin: 20px auto;
-            max-width: 100%;
-        }
-        .profile-text {
-            text-align: left;
-            padding-left: 30px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2c3e50;
-            color: white;
-        }
-        .service {
-            margin-bottom: 40px;
-            text-align: left;
-        }
-        .service h3 {
-            font-size: 24px;
-            color: #2c3e50;
-        }
-        .service p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-        }
-        .service ul {
-            list-style: none;
-            padding: 0;
-        }
-        .service ul li {
-            font-size: 16px;
-            color: #333;
-            padding-left: 20px;
-            position: relative;
-        }
-        .service ul li:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #2c3e50;
-        }
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form textarea {
-            resize: vertical;
-        }
-        form button {
-            background-color: #2c3e50;
-            color: white;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #34495e;
-        }
-
-        /* Media Queries pentru responsive */
-        @media only screen and (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-            .profile-text {
-                padding-left: 10px;
-                text-align: left;
-                padding-top: 20px;
-            }
-            /* Menținerea unei imagini mari pe dispozitive mobile */
-            .profile-image {
-                width: 80%; /* Dimensiune mai mare pentru a nu micșora imaginea prea mult */
-                max-width: 300px; /* Limita maximă a lățimii imaginii */
-            }
-            header h1 {
-                font-size: 20px;
-            }
-            .section {
-                padding: 20px 0;
-            }
-            /* Asigură că fundalul se vede pe mobil */
-            body {
-                background-attachment: scroll; /* Permite fundalului să se miște pe mobil */
-            }
-            /* Pe mobil, imaginea și textul vor fi afișate unul sub celălalt */
-            .profile-container {
-                display: block;
-                text-align: center;
-            }
-            .profile-image {
-                margin: 0 auto;
-            }
-        }
-
-        /* Pe dispozitive mai mari (desktop, tablete) imaginea și textul vor fi afișate unul lângă celălalt */
-        @media only screen and (min-width: 769px) {
-            .profile-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 30px;
-            }
-            .profile-image {
-                width: 300px;
-                height: auto;
-                margin: 0;
-            }
-            .profile-text {
-                text-align: left;
-                max-width: 600px;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Maria Cristea - Cabinet de Avocat</h1>
+            <h1>Maria Cristea</h1>
+            <h2>CABINET DE AVOCAT</h2>
             <nav>
                 <ul>
                     <li><a href="#despre">Despre mine</a></li>
                     <li><a href="#servicii">Servicii</a></li>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#testimoniale">Testimoniale</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -185,10 +26,10 @@
     </header>
     
     <section id="despre" class="section">
-        <div class="container">
+        <div class="container about">
             <h2>Despre mine</h2>
             <div class="profile-container">
-                <img src="poza.jpg" alt="Maria Cristea" class="profile-image">
+                <img src="poza-removebg-preview.png" alt="Maria Cristea" class="profile-image">
                 <div class="profile-text">
                     <p>Am absolvit Facultatea de Drept a Universității „Alexandru Ioan Cuza” din Iași în 2020, unde am urmat ulterior și cursuri de masterat la specializarea Cariera Judiciară și în prezent sunt avocat în Baroul Iași.</p>
                     <p>Prin muncă susținută, atenție la detalii și o abordare perfecționistă, ofer clienților cele mai bune soluții juridice. Fiecare caz este unic, iar abordarea mea se bazează pe profesionalism, integritate și găsirea celor mai potrivite strategii pentru a proteja drepturile și interesele clienților mei.</p>
@@ -203,7 +44,9 @@
             <h2>Servicii</h2>
             <h3>Domenii de expertiză</h3>
             <p>Vă oferim o gamă variată de servicii juridice în diverse domenii de drept, adaptate nevoilor dumneavoastră, pentru a asigura protejarea intereselor și drepturilor clienților mei.</p>           
- <div class="service">
+        </div>
+        <div class="services">
+            <div class="container service">
                 <h3>Drept Penal</h3>
                 <p>În domeniul dreptului penal, ofer asistență juridică completă, inclusiv reprezentare în fața instanțelor de judecată din mun. Iași și nu numai, redactare și consultanță juridică. Apăr clienții acuzați de o gamă largă de infracțiuni și mă asigur că drepturile lor sunt respectate pe toată durata procedurilor. Abordarea mea se bazează pe o analiză detaliată a cazului și pe aplicarea celor mai eficiente strategii de apărare.</p>
                 <ul>
@@ -213,7 +56,7 @@
                 </ul>
             </div>
 
-            <div class="service">
+            <div class="container service">
                 <h3>Dreptul Familiei</h3>
                 <p>Dreptul familiei este un domeniu sensibil, iar serviciile mele sunt menite să protejeze drepturile și interesele celor implicați. Ofer asistență în cazuri de divorț, partaj de bunuri, custodie a copiilor și pensie alimentară, întotdeauna punând accent pe mediere și soluționarea amiabilă, atunci când este posibil. Însă, atunci când nu există o înțelegere între părți, mă asigur că litigiul va fi soluționat în cel mai favorabil mod pentru clientul meu.</p>
                 <ul>
@@ -223,8 +66,9 @@
                     <li>Redactare acte pentru încheierea acordurilor de mediere</li>
                 </ul>
             </div>
-
-            <div class="service">
+        </div>
+        <div class="services">
+            <div class="container service">
                 <h3>Drept Contravențional</h3>
                 <p>În domeniul contravențional, ofer consultanță și apărare pentru clienții care se confruntă cu sancțiuni administrative sau contravenții. Acestea pot include amenzi, suspendarea permisului de conducere sau alte măsuri administrative. Mă asigur că fiecare client înțelege pe deplin procedurile legale și opțiunile disponibile pentru contestarea sancțiunilor.</p>
                 <ul>
@@ -234,7 +78,7 @@
                 </ul>
             </div>
 
-            <div class="service">
+            <div class="container service">
                 <h3>Executări Silite</h3>
                 <p>Atât debitorii, cât și creditorii pot întâmpina dificultăți în cadrul procedurilor de executare silită. Ofer soluții juridice clare și eficiente, care să protejeze interesele clienților, indiferent de partea în care se află. Pentru debitori, asigur consultanță privind protecția împotriva executărilor abuzive, iar pentru creditori, asist în procesul de recuperare a creanțelor.</p>
                 <ul>
@@ -248,7 +92,17 @@
    <section id="testimoniale" class="section">
         <div class="container">
             <h2>Testimoniale</h2>
-             <p style="font-size: 18px;">Ce spun clienții despre serviciile mele. Puteți consulta recenziile complete ale clienților pe profilul meu de pe <a href="https://www.google.com/search?q=Cabinet+de+Avocat+Cristea+Maria" target="_blank" style="color: #2c3e50;">Google</a>.</p>
+             <div class="stele"></div>
+             <p class="recenzie">"Am avut ocazia să colaborez cu domnișoara avocat Maria Cristea și pot spune că este un adevărat profesionist în domeniul juridic. Cu o abordare meticuloasă, dumneaei a demonstrat nu doar cunoștințe juridice solide, ci și o implicare deosebită în rezolvarea cazurilor.
+                Ceea ce o diferențiază este atenția la detalii, seriozitatea și capacitatea de a găsi cele mai bune soluții legale pentru clienții săi. Explică clar fiecare etapă a procesului juridic, oferă sprijin constant și se asigură că fiecare client este bine informat și reprezentat.
+                În plus, domnișoara avocat Maria Cristea dă dovadă de empatie și dedicare, calități esențiale pentru un avocat de succes. Fie că este vorba de consultanță, redactare de documente sau reprezentare în instanță, serviciile oferite sunt de înaltă calitate.
+                Recomand cu încredere serviciile sale tuturor celor care au nevoie de un avocat competent, serios și devotat! 🌟"</p>
+             <p class="autor">Recenzie scrisa de Eurowin Solution</p>
+             <div class="stele"></div>
+             <p class="recenzie">"Profesionalismul, dedicarea și atenția la detalii m-au impresionat profund la domnișoara avocat Maria Cristea.
+                O recomand cu toată încrederea pentru orice serviciu juridic, fiind o alegere sigură pentru succesul clientului! 🙏"</p>
+             <p class="autor">Recenzie scrisa de Stefana Loredana Huian</p>
+             <p style="font-size: 18px;">Puteți consulta recenziile complete ale clienților pe profilul meu de pe <a href="https://www.google.com/search?q=Cabinet+de+Avocat+Cristea+Maria" target="_blank" style="color: #2c3e50;">Google</a>.</p>
         </div>
     </section>
         </div>
